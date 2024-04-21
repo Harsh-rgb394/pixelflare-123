@@ -3,7 +3,9 @@ import { BrowserRouter, Link, Route, Routes, useNavigate } from 'react-router-do
 import { logo } from './assets';
 import { Home, CreatePost, Login, SignUp } from './pages';
 import Header from './components/Header';
-
+import Footer from "./components/Footer"
+import Aboutus from "./pages/Aboutus"
+import Contactus from './pages/Contactus';
 
 
 
@@ -46,9 +48,16 @@ const App = () => (
         <Route path="/create-post" element={<CreatePost />} />
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<SignUp />} />
+        <Route path="/aboutus" element={<Aboutus />} />
+        <Route path="/contactus" element={<Contactus />} />
+
+
+
 
       </Routes>
     </main>
+    <Footer />
+
   </BrowserRouter>
 );
 
