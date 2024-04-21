@@ -27,7 +27,7 @@ const SignUp = () => {
   const handleSubmit = async (e) => {
     try {
       e.preventDefault();
-      const response = await fetch("http://localhost:8080/api/v1/user/register", {
+      const response = await fetch("https://pixelflare-123-bakend.onrender.com/api/v1/user/register", {
         method: "POST",
         headers: {
           "Content-Type": "application/json"
