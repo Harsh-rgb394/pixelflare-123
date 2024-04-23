@@ -18,7 +18,7 @@ const Header = () => {
     const handleChange = () => {
         localStorage.removeItem("token");
         setIsLoggedIn(false);
-        // navigate("/");
+        navigate("/");
     }
 
 
